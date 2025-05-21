@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- IN line Script -->
     <!-- <button onclick= "alert('This is an in line Script');">Click Me</button>
     <button onclick="showMessage();">Click It!</button>
@@ -20,22 +20,107 @@
 
     <!-- External Script -->
     <!-- <script src="script.js"></script>      -->
-     <p id="demo"> This is a praragraph</p>
-    <button type="button" onclick="myfunction();"> Change Content</button> 
-    
+    <!-- <p id="demo">This is a praragraph</p>
+    <button type="button" onclick="myfunction();">Change Content</button>
+
     <script>
+      document.write("Hello Write");
+      alert("Welcome To my website");
 
-        document.write("Hello Write");
-        alert("Welcome To my website");
+      function myfunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
 
-        function myfunction(){
-            document.getElementById("demo").innerHTML = "Hello World"
+      console.log("Hello my name is console");
+    </script> -->
+
+    <!-- ตัวแปร -->
+    <!-- <script>
+        var name = "Eiei";
+        name = "Jane";
+        console.log(name)
+
+
+        let x = 5;
+        let y = 10;
+        let z = x+y;
+        console.log(z);
+
+        const a = 10;
+        const b = 20;
+        const c = a*b;
+        
+        console.log(c)
+    </script> -->
+
+    <!-- Scope  -->
+
+    <!-- <script>
+        {
+        var a =10;
+        let b =20;
+        const c =30;
+    }
+    // var สามารถ console นอก Scope ได้ 
+    // let กับ const ไม่สามารถทำได้ 
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    </script> -->
+
+
+    <!-- Data Type Learn -->
+    <!-- <script>
+        // number
+        let lenght = 200;
+        let weight = 10.5;
+
+        // String
+        let car = "Nisson";
+        let name = "John";
+
+        // Booleans
+        let istrue = true;
+        let isfalse = false;
+
+        // Object
+        const person = {
+            fristName:"John Eiei",
+            lastName:"Mark"
+        };
+
+        // Arrey
+        const cars = ["Honda", "Toyota", "Suzuki", "Tesla"];
+
+        // Undefined ตัวแปรที่ไม่มีการกำหนดค่า
+        let x;
+        console.log(typeof x )
+
+        // BigInt ตัวเก็บตัวเลขที่เยอะมากๆ ที่ไม่สามารถประกาศค่าได้ ไม่สามารถมีทศนิยมได้ ไม่สามารถใช้ฟังก์ชั่นคณิตศาสตร์ได้ 
+        let bigInt = BigInt("35345645613132148161321464513513165843121313135513");
+
+        // Symbol
+        const sym1 = Symbol("Symbol1");
+        const sym2 = Symbol("Symbol1");
+        console.log(sym1 === sym2);
+
+        // Null
+        let age = null;
+    </script> -->
+
+    <!-- Function -->
+
+    <script>
+        function myFunction(num1, num2){
+            return num1 * num2;
         }
+        myFunction(10,150);
+        console.log(myFunction(10, 150))
 
-        console.log("Hello my name is console");
-        
-        
     </script>
 
-</body>
+
+
+  </body>
 </html>
