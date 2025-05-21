@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- IN line Script -->
+    <!-- <button onclick= "alert('This is an in line Script');">Click Me</button>
+    <button onclick="showMessage();">Click It!</button>
+    <button onclick="showMessageEx();">Click Ex</button> -->
+
+    <!-- Internal Script -->
+    <!-- <script>
+        function showMessage(){
+            alert("This is an Internal Script!");
+        }
+    </script> -->
+
+    <!-- External Script -->
+    <!-- <script src="script.js"></script>      -->
+     <p id="demo"> This is a praragraph</p>
+    <button type="button" onclick="myfunction();"> Change Content</button> 
+    
+    <script>
+
+        document.write("Hello Write");
+        alert("Welcome To my website");
+
+        function myfunction(){
+            document.getElementById("demo").innerHTML = "Hello World"
+        }
+
+        console.log("Hello my name is console");
+        
+        
+    </script>
+
+</body>
+</html>
